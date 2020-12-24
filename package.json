@@ -1,0 +1,21 @@
+{
+  "name": "adbreakbot",
+  "description": "A twitch bot to automatically run mid-roll ads to prevent pre-roll ads.",
+  "homepage": "https://github.com/mrpilotman/adbreakbot",
+  "keywords": ["adbreakbot", "twitch", "ads"],
+  "version": "0.0.1dev",
+  "license": "MIT",
+  "author": "Sam Kopp",
+  "contributors": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mrpilotman/adbreakbot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mrpilotman/adbreakbot/issues"
+  },
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "tmi.js": "^1.7.1"
+  }
+}

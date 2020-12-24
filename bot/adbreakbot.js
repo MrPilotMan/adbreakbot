@@ -6,7 +6,7 @@ const util = require('./util.js');
 const notify = require('./notify.js');
 
 // Load correct bot config file
-const dev = true;
+const dev = false;
 const configFilePath = (dev === true) ? '../dev-config.js' : '../bot-config.js';
 const config = require(configFilePath);
 

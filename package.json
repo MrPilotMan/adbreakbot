@@ -3,7 +3,7 @@
   "description": "A twitch bot to automatically run mid-roll ads to prevent pre-roll ads.",
   "homepage": "https://github.com/mrpilotman/adbreakbot",
   "keywords": ["adbreakbot", "twitch", "ads"],
-  "version": "0.0.1dev",
+  "version": "0.0.2dev",
   "license": "MIT",
   "author": "Sam Kopp",
   "contributors": [],

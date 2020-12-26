@@ -17,15 +17,15 @@ function run(channel, duration, bot, client) {
     // Turn on slowmode
     if (bot.settings.slowmodeOn) {
         client.slow(channel, duration + 1000)
-            .then((data) => log(bot.account.username, 'Slow mode on', 'SEND'))
-            .catch((err) => log(bot.serverName, 'Failed to turn on slow mode', 'SEND'))
+            .then((data) => log.send(bot.account.username, 'Slow mode on'))
+            .catch((err) => log.err(bot.serverName, 'Failed to enable slow mode'))
     }
 
     // Clear chat
     if (bot.settings.clearChat) {
         client.clear(channel)
-            .then((data) => log(bot.account.username, 'Chat cleared', 'SEND'))
-            .catch((err) => log(bot.serverName, 'Failed to clear chat', 'ERR'));
+            .then((data) => log.send(bot.account.username, 'Chat cleared'))
+            .catch((err) => log.err(bot.serverName, 'Failed to clear chat'));
     }
 
     // Set stream title (no tmi command?)
